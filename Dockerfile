@@ -1,11 +1,14 @@
 # ベースイメージ名:タグ名
-FROM continuumio/anaconda3:2019.03
+FROM continuumio/anaconda3
 
 # pipをアップグレードし必要なパッケージをインストール
 RUN pip install --upgrade pip && \
     pip install autopep8 && \
     pip install Keras && \
-    pip install tensorflow 
+    pip install tensorflow \
+    apt-get update
+    apt install zsh
+    apt install emacs
 
 # コンテナ側のルート直下にworkdir/（任意）という名前の作業ディレクトリを作り移動する
 WORKDIR /workdir
