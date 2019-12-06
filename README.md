@@ -11,6 +11,11 @@ docker-compose up
 ```
 ~
 ```
+docker ps
+docker exec -it CONTAINER_NAME zsh
+```
+~
+```
 docker-compose stop
 docker-compose down
 ```
