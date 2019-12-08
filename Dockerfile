@@ -9,7 +9,8 @@ RUN pip install --upgrade pip && \
     pip install xgboost \
     apt-get update \
     apt install zsh \
-    apt install emacs
+    apt install emacs \
+    apt -y install htop
 
 # コンテナ側のルート直下にworkdir/（任意）という名前の作業ディレクトリを作り移動する
 WORKDIR /workdir
