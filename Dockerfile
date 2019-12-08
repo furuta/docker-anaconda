@@ -6,8 +6,9 @@ RUN pip install --upgrade pip && \
     pip install autopep8 && \
     pip install Keras && \
     pip install tensorflow \
-    apt-get update
-    apt install zsh
+    pip install xgboost \
+    apt-get update \
+    apt install zsh \
     apt install emacs
 
 # コンテナ側のルート直下にworkdir/（任意）という名前の作業ディレクトリを作り移動する
