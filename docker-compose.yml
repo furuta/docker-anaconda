@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: python-test
+    image: anaconda-notebook
     ports:
     - "8888:8888"
     volumes:
