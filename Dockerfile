@@ -5,12 +5,12 @@ FROM continuumio/anaconda3
 RUN pip install --upgrade pip && \
     pip install autopep8 && \
     pip install Keras && \
-    pip install tensorflow \
-    pip install xgboost \
-    apt-get update \
-    apt install zsh \
-    apt install emacs \
-    apt -y install htop
+    pip install tensorflow && \
+    pip install xgboost && \
+    apt-get update && \
+    apt-get -y install zsh && \
+    apt-get -y install emacs && \
+    apt-get -y install htop
 
 # コンテナ側のルート直下にworkdir/（任意）という名前の作業ディレクトリを作り移動する
 WORKDIR /workdir
